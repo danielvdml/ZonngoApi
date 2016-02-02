@@ -15,10 +15,10 @@ class CreateEcCaracteristicamodelosTable extends Migration
         Schema::create('ec_caracteristicamodelos', function (Blueprint $table) {
             $table->increments('id');
             $table->string("value");
-            $table->integer("idModelo");
-            $table->integer("idCaracteristica");
+            $table->integer("idModelo")->unsigned();
+            $table->integer("idCaracteristica")->unsigned();
             $table->foreign("idModelo")->references("id")->on("ec_modelos");
-            $table->foreign("idCaracterisca")->references("id")->on("ec_caracteristicas");
+            $table->foreign("idCaracteristica")->references("id")->on("ec_caracteristicas");
             $table->timestamps();
         });
     }
