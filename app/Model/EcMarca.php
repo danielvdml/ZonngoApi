@@ -4,8 +4,10 @@ namespace App\model;
 
 use Illuminate\Database\Eloquent\Model;
 
-class ec_caracteristica extends Model
+class EcMarca extends Model
 {
-    protected $table="ec_caracteristicas";
+    protected $table="ec_marcas";
     protected $fillable=array("desc");
+    protected $timestamps=false;
+
 }
