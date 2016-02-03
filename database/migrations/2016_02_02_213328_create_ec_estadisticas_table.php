@@ -14,7 +14,7 @@ class CreateEcEstadisticasTable extends Migration
     {
         Schema::create('ec_estadisticas', function (Blueprint $table) {
             $table->increments('id');
-            $table->fecha("update");
+            $table->date("update");
             $table->integer("cantArtNuevos");
             $table->integer("cantArtDisp");
             $table->float("avg");
@@ -22,7 +22,7 @@ class CreateEcEstadisticasTable extends Migration
             $table->float("max");
             $table->float("ds");
             $table->integer("idModelo")->unsigned();
-            $table->foreign("idModelo")->references("id")->on("ec_modelo");
+            $table->foreign("idModelo")->references("id")->on("ec_modelos");
             $table->timestamps();
         });
     }

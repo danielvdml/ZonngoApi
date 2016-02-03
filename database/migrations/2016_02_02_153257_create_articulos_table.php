@@ -24,11 +24,11 @@ class CreateArticulosTable extends Migration
             $table->foreign('idModelo')->references('id')->on('ec_modelos');
             $table->integer('idOrigen')->unsigned();
             $table->foreign('idOrigen')->references('id')->on('ec_origens');
-            $table->integer('idCondicion')->unsigned();
+            $table->tinyInteger('idCondicion')->unsigned();
             $table->foreign('idCondicion')->references('id')->on('ec_condicions');
             $table->integer('idMoneda')->unsigned();
             $table->foreign('idMoneda')->references('id')->on('monedas');
-            #$table->timestamps();
+            //$table->timestamps();
         });
     }
 

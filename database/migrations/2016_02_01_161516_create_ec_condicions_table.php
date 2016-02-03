@@ -13,9 +13,10 @@ class CreateEcCondicionsTable extends Migration
     public function up()
     {
         Schema::create('ec_condicions', function (Blueprint $table) {
-            $table->increments('id');
+            $table->tinyInteger('id')->unsigned();
             $table->string('tipo', 10);
-            #$table->timestamps();
+            //$table->timestamps();
+            $table->primary('id');
         });
     }
 
