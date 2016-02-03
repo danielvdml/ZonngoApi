@@ -12,7 +12,7 @@ class EcCaracteristica extends Model
 
     public $timestamps = false;
 
-    public function modelos()
+    public function modelo()
     {
         return $this->belongsToMany("App\Model\EcModelo", 'CaracteristicaModelo', 'idCaracteristica', 'idModelo')->withPivot('valor');
     }

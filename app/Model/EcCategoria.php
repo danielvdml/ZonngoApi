@@ -12,7 +12,7 @@ class EcCategoria extends Model
 
     public $timestamps = false;
 
-    public function modelos()
+    public function modelo()
     {
         return $this->hasMany("App\Model\EcModelo", 'idCategoria');
     }

@@ -14,7 +14,7 @@ class Moneda extends Model
     public $timestamps = false;
     //protected $hidden = ['created_at', 'updated_at'];
 
-    public function tipoCambios()
+    public function tipoCambio()
     {
         return $this->hasMany('App\Model\TipoCambio', 'idMoneda1');
     }

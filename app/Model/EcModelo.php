@@ -12,13 +12,18 @@ class EcModelo extends Model
 
     public $timestamps = false;
 
-    public function caracteristicas()
+    public function caracteristica()
     {
         return $this->belongsToMany("App\Model\EcCaracteristica", 'CaracteristicaModelo', 'idModelo', 'idCaracteristica')->withPivot('valor');
     }
 
-    public function estadisticas()
+    public function estadistica()
     {
         return $this->hasMany("App\Model\EcEstadistica", 'idModelo');
+    }
+
+    public function articulo()
+    {
+        return $this->hasMany("App\Model\EcArticulo","idModelo");
     }
 }
