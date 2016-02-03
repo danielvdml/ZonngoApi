@@ -18,7 +18,7 @@ class CreateTipoCambiosTable extends Migration
             $table->integer('idMoneda2')->unsigned();
             $table->foreign('idMoneda2')->references('id')->on('monedas');
             $table->float('equiv');
-            $table->timestamps();
+            #$table->timestamps();
             $table->primary(array('idMoneda1', 'idMoneda2'));
         });
     }

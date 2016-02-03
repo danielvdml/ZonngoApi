@@ -28,7 +28,7 @@ class CreateArticulosTable extends Migration
             $table->foreign('idCondicion')->references('id')->on('ec_condicions');
             $table->integer('idMoneda')->unsigned();
             $table->foreign('idMoneda')->references('id')->on('monedas');
-            $table->timestamps();
+            #$table->timestamps();
         });
     }
 

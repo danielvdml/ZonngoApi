@@ -15,7 +15,7 @@ class CreateEcCaracteristicasTable extends Migration
         Schema::create('ec_caracteristicas', function (Blueprint $table) {
             $table->increments('id');
             $table->string("desc");
-            $table->timestamps();
+            #$table->timestamps();
         });
     }
 

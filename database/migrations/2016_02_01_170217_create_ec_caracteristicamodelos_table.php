@@ -19,7 +19,7 @@ class CreateEcCaracteristicamodelosTable extends Migration
             $table->integer("idCaracteristica")->unsigned();
             $table->foreign("idModelo")->references("id")->on("ec_modelos");
             $table->foreign("idCaracteristica")->references("id")->on("ec_caracteristicas");
-            $table->timestamps();
+            #$table->timestamps();
         });
     }
 

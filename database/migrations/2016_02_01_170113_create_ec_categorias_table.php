@@ -15,7 +15,7 @@ class CreateEcCategoriasTable extends Migration
         Schema::create('ec_categorias', function (Blueprint $table) {
             $table->increments('id');
             $table->string("desc");
-            $table->timestamps();
+            #$table->timestamps();
         });
     }
 

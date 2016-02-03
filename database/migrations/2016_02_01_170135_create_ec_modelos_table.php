@@ -19,7 +19,7 @@ class CreateEcModelosTable extends Migration
             $table->integer("idCategoria")->unsigned();
             $table->foreign("idMarca")->references("id")->on("ec_marcas");
             $table->foreign("idCategoria")->references("id")->on("ec_categorias");
-            $table->timestamps();
+            #$table->timestamps();
         });
     }
 

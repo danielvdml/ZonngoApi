@@ -17,7 +17,7 @@ class CreateEcOrigensTable extends Migration
             $table->string('desc');
             $table->string('pais');
             $table->string('url');
-            $table->timestamps();
+            #$table->timestamps();
         });
     }
 
