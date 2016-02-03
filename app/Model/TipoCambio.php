@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace App\Model;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -11,10 +11,12 @@ class TipoCambio extends Model
 
     protected $primaryKey = ['idMoneda1', 'idMoneda2'];
 
-    protected $fillable = ['idMoneda1', 'idMoneda2', 'equiv'];
+    protected $fillable = ['equiv'];
 
-    protected $timestamps = false;
+    public $timestamps = false;
     //protected $hidden = ['created_at', 'updated_at'];
+
+    public $incrementing = false;
 
     public function moneda1()
     {

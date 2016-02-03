@@ -14,7 +14,7 @@ class CreateEcCaracteristicamodelosTable extends Migration
     {
         Schema::create('ec_caracteristicamodelos', function (Blueprint $table) {
             $table->increments('id');
-            $table->string("value");
+            $table->string("valor");
             $table->integer("idModelo")->unsigned();
             $table->integer("idCaracteristica")->unsigned();
             $table->foreign("idModelo")->references("id")->on("ec_modelos");

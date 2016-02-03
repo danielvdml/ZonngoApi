@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace App\Model;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -10,9 +10,9 @@ class EcArticulo extends Model
     protected $table = 'ec_articulos';
 
     protected $fillable = array('titulo', 'link', 'precio', 'estado', 'imagen',
-      'fecha', 'idModelo', 'idOrigen', 'idCondicion', 'idMoneda');
+      'fecha', 'idModelo', 'idOrigen', 'idCondicion', 'idMoneda', );
 
-    protected $timestamps = false;
+    public $timestamps = false;
     //protected $hidden = ['created_at', 'updated_at'];
 
     public function modelo()

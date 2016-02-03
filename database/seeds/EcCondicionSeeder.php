@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use App\EcCondicion;
+use App\Model\EcCondicion;
 
 class EcCondicionSeeder extends Seeder
 {
@@ -15,8 +15,8 @@ class EcCondicionSeeder extends Seeder
         //
         EcCondicion::truncate();
         EcCondicion::create([
-          'id' -> 1,
-          'tipo' -> 'Nuevo'
+          'id' => 1,
+          'tipo' => 'Nuevo'
         ]);
         EcCondicion::create([
           'id' => 2,

@@ -14,7 +14,7 @@ class CreateEcEstadisticasTable extends Migration
     {
         Schema::create('ec_estadisticas', function (Blueprint $table) {
             $table->increments('id');
-            $table->date("update");
+            $table->date("fecha");
             $table->integer("cantArtNuevos");
             $table->integer("cantArtDisp");
             $table->float("avg");

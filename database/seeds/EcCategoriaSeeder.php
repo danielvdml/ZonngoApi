@@ -13,15 +13,15 @@ class EcCategoriaSeeder extends Seeder
         EcCategoria::truncate();
         EcCategoria::create([
             'id' => 1,
-            'desc' => 'Celulares'
-            ]);
+            'desc' => 'Celulares',
+        ]);
         EcCategoria::create([
             'id' => 2,
-            'desc' => 'Tablets'
-            ]);
+            'desc' => 'Tablets',
+        ]);
         EcCategoria::create([
             'id' => 3,
-            'desc' => 'Laptops'
-            ]);
+            'desc' => 'Laptops',
+        ]);
     }
 }

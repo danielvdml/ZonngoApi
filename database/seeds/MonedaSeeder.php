@@ -16,20 +16,17 @@ class MonedaSeeder extends Seeder
         //
         Moneda::truncate();
 
-        Moneda::create({
-          'id' => 1,
+        Moneda::create([
           'desc' => 'Sol',
           'codigo' => 'PEN'
-        });
-        Moneda::create({
-          'id' => 2,
+        ]);
+        Moneda::create([
           'desc' => 'Dolar Estadounidense',
           'codigo' => 'USD'
-        });
-        Moneda::create({
-          'id' => 3,
+        ]);
+        Moneda::create([
           'desc' => 'Peso Argentino',
           'codigo' => 'ARS'
-        });
+        ]);
     }
 }
